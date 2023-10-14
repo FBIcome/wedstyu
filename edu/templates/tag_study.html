@@ -4,6 +4,16 @@
 <h1><a href="https://www.youtube.com/watch?v=V6I_U0PVlNU" target="_blank">Siuuu</a><br/></h6>
         <img src="https://i.namu.wiki/i/MawGO1EIWMUN3NVvFQXYg9zBJP2v2F-GvCjDox4mch_POzhtHlW30ghXtz0mvjXtJVYmSsQzKMdA-xkAp1DK7wzvfbnVZXEjPhLd6NdqOLUQfuWudwWNvymboKAzA6CmJTT0xgjpRyhno0RFQHKimA.svg" width='100' height='100'>
 <h1><button>프로필편집</button></h1>
+<a href="{%url 'edu:new_content'%}">새글등록
+</a>
+<p>
+{% for f in feed_list %}
+    <li>
+    {{ f.content }}
+        <img src="/media/{{ f.photo }}"/>
+    </li>
+{% endfor %}
+</p>
 <strong>호날두</strong>
 <h6>게시물</h1>
 <h6>102</h1>
