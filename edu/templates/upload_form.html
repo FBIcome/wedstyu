@@ -5,5 +5,34 @@
         <input type="text" name="content"/>
         <input type="file" accept="image/*" name = "up_photo"/><br/>
         <input type="submit" value="저장">
+        <p>
+            <ladel type="age_input">나이:</ladel>
+            <input type="number"   name = "age" id="age_input"/>
+        </P>
+        <p>
+            <ladel for = "pwd_input">비밀번호:</ladel>
+            <input type = "password" name="pwd"id="pwd_input"/>
+        </p>
+        <p>
+            <ladel for = "phone_input">전화번㝀:</ladel>
+            <input type = "tel" name="phone" id= "phone_input" placeholder = "01012345678 형식으로 입력" />
+        </p>    
+        <p> 
+            <ladel for = "search_input">검색:</ladel>
+            <input type ="search" name = "sch" id ="search_input" placeholder = "~~" />
+        </p>
+        <p> 
+            <ladel for = "color_input">색 선택:</ladel>
+            <input type ="color" name = "color" id ="color_input"/>
+        </p>
+        <p> 
+            <ladel for = "range_input">범위선택:</ladel>
+            <input type ="range" name = "range" id ="range_input"/>
+        </p>
+        <p> 
+            <ladel for = "Birth_input">날짜:</ladel>
+            <input type ="date" name = "Birth" id ="Birth_input"/>
+        </p>
+
     </form>
 {% endblock content %}
