@@ -8,4 +8,5 @@ urlpatterns = [
 
     path('tag', views.TagStudy.as_view(), name='tag_study'),
     path('new', views.NewContent.as_view(), name='new_content'),
+    path('subway', views.Subway.as_view(), name='subway'),
 ]

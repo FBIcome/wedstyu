@@ -48,3 +48,8 @@ class NewContent(View):
         feed = Feed(content = param , photo = param2)
         feed.save()
         return redirect('edu:tag_study')
+class Subway(View):
+    template_name= 'subway.html'
+
+    def get(self, request):
+        return render(request, self.template_name)

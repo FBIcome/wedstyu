@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-    {% block content %}
+{% block content %}
     <form action="{% url 'edu:new_content' %}" method="POST" enctype = "multipart/form-data">
         {% csrf_token %}
         <input type="text" name="content"/>
@@ -33,6 +33,33 @@
             <ladel for = "Birth_input">날짜:</ladel>
             <input type ="date" name = "Birth" id ="Birth_input"/>
         </p>
-
+        <br>
+            <input type = "checkbox">저녁을 드셨나요?</input>
+            <input type = "checkbox">저녁을 드셨나요?</input>
+            <input type = "checkbox" checked>저녁을 드셨나요?</input>
+        </br>
+        <p> 
+            <input type = "radio" name = "radiol">일식</input>
+            <input type = "radio"name = "radiol" >중식</input>
+            <input type = "radio" name = "radiol">양식</input>
+        </p>
+        <p>
+            <input type = "radio" name = "radioq">인매운식</input>
+            <input type = "radio"name = "radioq" >매운식</input>
+        </p>
+        <p>
+            <input type = "radio" name = "radiow">차가운식</input>
+            <input type = "radio"name = "radiow" >뜨거운것</input>
+        </p>
+        <p>
+            <textarea cols = "50" rows = "10"></textarea>
+        </p>
+        <p>
+            <select>
+            <option value = "1">피자</option>
+            <option value = "4">통닭</option>
+            <option value = "3">국ㄱ밥</option>
+            <option value = "2">사ㅁ계탕</option>
+        </p>
     </form>
 {% endblock content %}

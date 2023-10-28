@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>
+    설문조사
+</h1>
+    <p> 
+        <ladel for = "name_input">이름:</ladel>
+        <input type ="text" name = "sh2" id ="name_input" placeholder = "김유신" />
+    </p>
+    <p> 
+        <ladel for = "hop_input">주소:</ladel>
+        <input type ="text" name = "sh1" id ="hop_input" placeholder = "전주시 소림구 백길로 333동 9821호" />
+    </p>
+    <p> 
+        <ladel for = "company_input">회사:</ladel>
+        <input type ="text" name = "company" id ="company_input" value = "samsung" disabled />
+       
+    </p>
+    <p>      
+        <ladel for = "man_input">성별:</ladel>
+        <input type = "radio" name = "radioq">남</input>
+        <input type = "radio"name = "radioq" >여</input>
+    </p>
+    <p>      
+        <ladel for = "phone_input">전화번호 앞자리:</ladel>
+        <input type = "radio" name = "radi2oq">기타</input>
+        <input type = "radio"name = "radi2oq" >010</input>
+    </p>
+    <p> 
+        <ladel for = "animal_input">좋아하는 도물:</ladel>
+        <input type = "checkbox">개</input>
+        <input type = "checkbox">고양이</input>
+        <input type = "checkbox">뱁</input>
+        <input type = "checkbox">게</input>
+    </p>
+    <p> 
+        <ladel for = "id_input">ID:</ladel>
+        <input type ="text" name = "sch3" id ="search_input" placeholder = "아이디" />
+    </p>
+    <p>
+            <ladel for = "pwd_input">PW:</ladel>
+            <input type = "password" name="pwd"id="pwd_input"placeholder = "비밀번호"/>
+    </p>
+    <p>
+            <select>
+                <option value = "1">010</option>
+                <option value = "4">011</option>
+                <option value = "3">063</option>
+                <option value = "2">02</option>
+            </select>
+    </p>
+    
+    
+    
+    <p>
+            <textarea cols = "50" rows = "10" placeholder = "설문조사 후기"></textarea>
+    </p>
+
+
+{% endblock content %}
