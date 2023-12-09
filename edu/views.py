@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect, get_object_or_404
-from django.views.generic import View
+from django.views.generic import View, DetailView
 from .models import Feed 
 # Create your views here.
 class Index(View):
@@ -53,3 +53,11 @@ class Subway(View):
 
     def get(self, request):
         return render(request, self.template_name)
+class FeedDetail(DetailView):
+    model = Feed
+    template_name ="feed/detail.html"
+    def get_context_data(self,**kwargs) :
+        context = super().get_context_data(**kwargs)
+        feed = get_object_or_404(Feed, pk = self.kwargs['pk'])
+        context['feed'] = feed
+        return context
